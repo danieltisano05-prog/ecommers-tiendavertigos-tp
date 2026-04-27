@@ -9,5 +9,22 @@
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     gap: 20px;
+
+    .header
+{
+    grid-area: header;
+    background-color: $color-header-uno;
+    color: $color-bg-dos;
+    .logo
+    {
+        display: flexbox;
+        justify-content:center;
+        align-items: center;
+        margin: 20px;
+        border: 1px solid black;
+        
+    }
+
+}
     
 }
