@@ -2,29 +2,38 @@
 {
     display: grid;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer";
-    grid-template-columns: repeat(auto-fill,minmax(2,1fr));
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     gap: 20px;
-
     .header
-{
-    grid-area: header;
-    background-color: $color-header-uno;
-    color: $color-bg-dos;
-    .logo
     {
-        display: flexbox;
+        grid-area: header;
+        
+        display: flex;
+        flex-direction:column;
         justify-content:center;
+        // flex-wrap: wrap;
         align-items: center;
-        margin: 20px;
-        border: 1px solid black;
+        width: 100%;
+        .logo
+        {   
+            margin: 10px;
+            width: 100%;           
+            max-width: 500px;   
+            height: auto;       
+
+        }
+        .nadvar
+        { 
+            color: $color-bg-dos;
+            width:100lh;
+            background-color: #272727;
+        }
         
     }
 
-}
-    
 }
