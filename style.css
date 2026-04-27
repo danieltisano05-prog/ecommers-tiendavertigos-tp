@@ -1,23 +1,29 @@
 .grid-container {
   display: grid;
-  grid-template-areas: "header header" "main main" "footer footer";
-  grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   gap: 20px;
 }
-
-.header {
+.grid-container .header {
   grid-area: header;
-  background-color: #3b3544;
-  color: #ebe8f0;
-}
-.header .logo {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  border: 1px solid black;
+  width: 100%;
+}
+.grid-container .header .logo {
+  margin: 10px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.grid-container .header .nadvar {
+  color: #ebe8f0;
+  width: 100lh;
+  background-color: #272727;
 }
 
 * {
