@@ -8,7 +8,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
-    gap: 20px;
+    gap: 0;
     .header
     {
         background-color: $color-nav-uno;
@@ -54,10 +54,7 @@
                     // margin-bottom: 8px;
                     border-radius: 5px;
                 }
-                .label
-                {
-                    
-                }
+            
             }
             .style-vinculo
             {
@@ -70,6 +67,69 @@
             }
         }
         
+    }
+    .main
+    {
+        grid-area: main;
+        background-color:$color-bg-dos;
+
+        display: grid;
+        grid-template-areas: 
+        "image"
+        "title"
+        "indu"
+        "calz"
+        "acce";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        width: 100%;
+        gap: 20px;
+        .image-principal
+        {
+            grid-area: image;
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .title
+        {
+            
+            grid-area: title;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+            font-family: sans-serif;
+            font-weight: bold;
+            color: $color-h1;
+            padding: 20px;
+            
+            
+            
+        }
+
+        .indumentaria
+        {
+            grid-area:indu ;
+            width:auto ;
+            height: auto;
+
+        }
+        .calzado
+        {
+            grid-area: calz;
+        }
+        .accesorios
+        {
+            grid-area: acce;
+        }
+    }
+
+    .footer
+    {
+        grid-area: footer;
     }
 
 }
