@@ -4,7 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  gap: 20px;
+  gap: 0;
 }
 .grid-container .header {
   background-color: #282828;
@@ -50,6 +50,47 @@
   border-style: solid;
   border-radius: 10px;
   padding: 5px 20px 5px 20px;
+}
+.grid-container .main {
+  grid-area: main;
+  background-color: #ebe8f0;
+  display: grid;
+  grid-template-areas: "image" "title" "indu" "calz" "acce";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  width: 100%;
+  gap: 20px;
+}
+.grid-container .main .image-principal {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.grid-container .main .title {
+  grid-area: title;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #3d3a3a;
+  padding: 20px;
+}
+.grid-container .main .indumentaria {
+  grid-area: indu;
+  width: auto;
+  height: auto;
+}
+.grid-container .main .calzado {
+  grid-area: calz;
+}
+.grid-container .main .accesorios {
+  grid-area: acce;
+}
+.grid-container .footer {
+  grid-area: footer;
 }
 
 * {
