@@ -1,9 +1,0 @@
-<tipo>: <descripción corta>
-
-# --- Tipos posibles ---
-# feat: Nueva funcionalidad
-# fix: Error corregido
-# docs: Documentación
-# style: Formato (espacios, puntos y coma)
-# refactor: Mejora de código (sin cambios de lógica)
-# chore: Tareas de mantenimiento
