@@ -1,0 +1,6 @@
+# Ignorar archivos generados por Sass
+style.css
+style.css.map
+
+# Ignorar carpetas de configuración innecesarias
+.gitmessage/
