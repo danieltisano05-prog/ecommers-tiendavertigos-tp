@@ -83,7 +83,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto auto;
         width: 100%;
-        gap: 20px;
+        gap: 30px;
         .image-principal
         {
             grid-area: image;
@@ -102,6 +102,7 @@
             align-items: center;
             
             font-family: sans-serif;
+            font-size: 3rem;
             font-weight: bold;
             color: $color-h1;
             padding: 20px;
@@ -112,24 +113,114 @@
 
         .indumentaria
         {
-            grid-area:indu ;
-            width:auto ;
-            height: auto;
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+            .texto-indu
+            {
+                display: grid;
+                grid-template-areas: 
+                "titulo"
+                "parrafo";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+
+
+                background-color: $color-bgtres;    
+                border-radius: 20px;
+                padding: 1rem;       
+                margin: 0 auto; //centro el contenedor 
+                width: 70%;
+                height: auto;
+                
+                h3
+                {
+                    grid-area: titulo;
+                    text-align: center;
+                    font-size: 2rem;
+                    color:$colorcateg;
+                }
+                p{
+                    grid-area: parrafo;
+                    margin: 10px;
+                    padding: 10px;
+                    text-align: justify;
+                    
+                }
+            }
+            .vinculos-style
+            {
+                text-decoration: none;
+                color: inherit;
+            }
+           
 
         }
         .calzado
         {
             grid-area: calz;
+            width:auto ;
+            height: auto;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+            .texto-calz
+            {
+                h3
+                {
+                    text-align: center;
+                }
+                p{
+                    margin: 20px;
+                }
+            }
+
+            .vinculos-style
+            {
+                text-decoration: none;
+                color: inherit;
+            }
+
         }
         .accesorios
         {
             grid-area: acce;
+            width:auto ;
+            height: auto;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .texto-accs
+            {
+                h3
+                {
+                    text-align: center;
+                }
+                p{
+                    margin: 20px;
+                }
+            }
+            .vinculos-style
+            {
+                text-decoration: none;
+                color: inherit;
+            }
         }
     }
 
     .footer
     {
         grid-area: footer;
+        
     }
 
 }
