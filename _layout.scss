@@ -26,7 +26,6 @@
             width: 100%;           
             max-width: 500px;   
             height: auto;       
-
         }
         .nadvar
         { 
@@ -38,7 +37,6 @@
             width:100%;
             background-color: $color-nav;
             gap:2rem;
-            
             .form //Contiene los input para el nombre del usuario y el pass 
             {
                 display: flex;
@@ -54,7 +52,6 @@
                     // margin-bottom: 8px;
                     border-radius: 5px;
                 }
-            
             }
             .style-vinculo
             {
@@ -66,7 +63,6 @@
                 padding: 5px 20px 5px 20px ;
             }
         }
-        
     }
     .main
     {
@@ -106,11 +102,7 @@
             font-weight: bold;
             color: $color-h1;
             padding: 20px;
-            
-            
-            
-        }
-
+            }
         .indumentaria
         {
             
@@ -127,7 +119,6 @@
                 "parrafo";
                 grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr;
-
 
                 background-color: $color-bgtres;    
                 border-radius: 20px;
@@ -156,7 +147,24 @@
                 text-decoration: none;
                 color: inherit;
             }
-           
+            .image-ind
+            {   
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                .card-uno
+                {
+                
+                }
+                .card-dos
+                {
+
+                }
+                .card-tres
+                {
+
+                }
+            }
 
         }
         .calzado
@@ -172,12 +180,33 @@
             
             .texto-calz
             {
+                display: grid;
+                grid-template-areas: 
+                "titulo"
+                "parrafo";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+
+                background-color: $color-bgtres;    
+                border-radius: 20px;
+                padding: 1rem;       
+                margin: 0 auto; //centro el contenedor 
+                width: 70%;
+                height: auto;
+                
                 h3
                 {
+                    grid-area: titulo;
                     text-align: center;
+                    font-size: 2rem;
+                    color:$colorcateg;
                 }
                 p{
-                    margin: 20px;
+                    grid-area: parrafo;
+                    margin: 10px;
+                    padding: 10px;
+                    text-align: justify;
+                    
                 }
             }
 
@@ -201,12 +230,33 @@
 
             .texto-accs
             {
+                display: grid;
+                grid-template-areas: 
+                "titulo"
+                "parrafo";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+
+                background-color: $color-bgtres;    
+                border-radius: 20px;
+                padding: 1rem;       
+                margin: 0 auto; //centro el contenedor 
+                width: 70%;
+                height: auto;
+                
                 h3
                 {
+                    grid-area: titulo;
                     text-align: center;
+                    font-size: 2rem;
+                    color:$colorcateg;
                 }
                 p{
-                    margin: 20px;
+                    grid-area: parrafo;
+                    margin: 10px;
+                    padding: 10px;
+                    text-align: justify;
+                    
                 }
             }
             .vinculos-style
