@@ -105,11 +105,14 @@
             }
         .indumentaria
         {
-            
+            grid-area: indu;
+            width:auto ;
+            height: auto;
             //display: flex;
             //flex-direction: column;
             //flex-wrap: wrap;
             //gap: 10px;
+            //Estos comandos no cumplen ninguna funcion
             
             .texto-indu
             {
@@ -155,10 +158,11 @@
             width:auto ;
             height: auto;
 
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 10px;
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // gap: 10px;
+             //Estos comandos no cumplen ninguna funcion
             
             .texto-calz
             {
@@ -205,10 +209,11 @@
             width:auto ;
             height: auto;
 
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 10px;
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // gap: 10px;
+             //Estos comandos no cumplen ninguna funcion
 
             .texto-accs
             {
