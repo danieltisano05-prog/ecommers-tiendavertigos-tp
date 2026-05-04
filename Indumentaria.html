@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indumentaria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/img-marca.svg" alt="Icono de la tienda" height="300">
-        <nav>
-            <a href="index.html"><h3>Home</h3></a>
-            <br>
-            <a href="calzados.html">Calzados</a>
-            <a href="accesorios.html">Accesorios</a>
+    <div class="grid-container">
+    <header  class="header">
+        <img  class="logo" src="assets/img-marca.svg" alt="Icono de la tienda" >
+        <nav class="nadvar"> 
+            <a   class="style-vinculo" href="crear-perfil.html">Nuevo perfil </a>
+            <form  class="form" action="" method="post">
+                <label for="usuario" >Inicio de sesion</label>
+                <input type="text" id="usuario"  name="nomb" placeholder="Usuario" required >
+                <input type="password" id="contaseña" name="pass" placeholder="************" required>
+                <button  class="button" type="submit" >iniciar sesion</button>  
+            </form>
         </nav>
-        <img src="assets/captine.webp" alt="imagen entorno" width="1600" height="200">
     </header>
+    
     <main>
+        <img src="assets/indumentaria-header.png" alt="imagen entorno" >
         <h1>Indumentaria</h1>
         <ul>
             <li><h2>Remeras</h2></li>
@@ -45,9 +51,10 @@
             </div>
         </ul>
     </main>
-    
+
     <footer>
         <a href="">Terminos y Condiciones </a>       
     </footer>
+    </div>
 </body>
 </html>
