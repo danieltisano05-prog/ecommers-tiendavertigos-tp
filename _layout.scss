@@ -272,6 +272,11 @@
             align-items: flex-start;
             margin-top: 10px;
             margin-bottom: 30px;  
+            
+            div
+            {
+                text-align: center;  
+            }
             .p-footer
             {
                 font-size: 18px;
@@ -297,20 +302,20 @@
                 border-top: 5px;
                 border-color: $color-bgtres;
             }
-            div
-            {
-                text-align: center;  
-            }
-            
         }
-        .logo-footer
+        .logo-contenedor
         {
-            
-            justify-content: center;
-            text-align: center;
-            width: 100%;           
-            max-width: 400px;   
-            height: auto;   
-        }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            .logo-footer
+            {
+                
+                width: 100%;           
+                max-width: 400px;   
+                height: auto;   
+            }
+        }  
     }
 }
