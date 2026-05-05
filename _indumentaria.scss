@@ -1,4 +1,45 @@
 .main-indumentaria
-{
+{   
+    grid-area: main;
     background-color:$color-bg-dos;
+
+    display: grid;
+        grid-template-areas: 
+        "image"
+        "title"
+        "remera"
+        "buzo"
+        "campera"
+        "pantalones";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto auto auto;
+        width: 100%;
+        gap: 30px;
+        
+        .image-principal
+        {
+            grid-area:image;
+            width: 100%;
+            height: auto;
+        }
+        .title-principal
+        {
+            grid-area:title;
+        }
+        .remeras-cont
+        {
+            grid-area:remera;
+        }
+        .buzos-cont
+        {
+            grid-area:buzo;
+        }
+        .camperas-cont
+        {
+            grid-area:campera;
+        }
+        .pantalones
+        {
+            grid-area:pantalones;
+        }
 }
