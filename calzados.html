@@ -6,44 +6,161 @@
     <title>Document</title>
 </head>
 <body>
-
-    <header>
-        <img src="assets/img-marca.svg" alt="Icono de la tienda" height="300">
-        <nav>
-            <a href="index.html"><h3>Home</h3></a>
-            <br>
-            <a href="Indumentaria.html">Indumentaria</a>
-            <a href="accesorios.html">Accesorios</a>
+<div class="grid-container">
+    <header  class="header">
+        <img  class="logo" src="assets/identidad/img-marca.svg" alt="Icono de la tienda" >
+        <nav class="nadvar"> 
+            <a   class="style-vinculo" href="crear-perfil.html">Nuevo perfil </a>
+            <form  class="form" action="" method="post">
+                <label for="usuario" >Inicio de sesion</label>
+                <input type="text" id="usuario"  name="nomb" placeholder="Usuario" required >
+                <input type="password" id="contaseña" name="pass" placeholder="************" required>
+                <button  class="button" type="submit" >iniciar sesion</button>  
+            </form>
         </nav>
-        <img src="assets/captine.webp" alt="imagen entorno" width="1600" height="200">
     </header>
+    
+    <main class="main-indumentaria">
+        <div><img class="image-principal" src="assets/identidad/indumentaria-header.png" alt="imagen entorno"></div>
+        <div class="title-principal"><h1>Indumentaria</h1></div>
 
-    <main>
-        <h1>Calzados</h1>
-        <ul>
-            <li><h2>Zapatillas</h2></li>
-            <div>
-                <img src="assets/zap-uno.webp" alt="" height="450">
-                <img src="assets/zap-dos.webp" alt="" height="450">
-                <img src="assets/zap-tres.webp" alt="" height="450">    
+        <div class="remeras-cont">
+            <h2>Remeras</h2>
+            <div class="cards">
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/rem-uno.webp" alt="Conjunto de ropa" > 
+                    <h3>Descripción</h3>
+                    <p>Algodón premium y cortes modernos diseñados para el movimiento. La base esencial y duradera para tu outfit urbano diario</p>
+                    </a>
+                </div>
+
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/rem-dos.webp" alt="Conjunto de invierno" > 
+                    <h3>Descripción</h3>
+                    <p>Camperas técnicas y buzos oversize con frisa pesada. Máximo confort térmico para enfrentar el frío con estética impecable</p> 
+                    </a>
+                </div>
+
+                <div class="card-estruc"> 
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/rem-tre.webp" alt="Remera overside"> 
+                    <h3>Descripción</h3>
+                    <p>Desde joggers relajados hasta cortes cargo resistentes. Diseños duraderos con el ajuste perfecto para tu ritmo de vida.</p> 
+                    </a>
+                </div>
             </div>
-            <li><h2>Borcegos</h2></li>
-            <div>
-                <img src="assets/bor-uno.webp" alt="" height="450">
-                <img src="assets/bor-dos.webp" alt="" height="450">
-                <img src="assets/bor-tres.webp" alt="" height="450">    
+        </div>
+
+        <div class="buzos-cont">
+            <h2>Buzos</h2>
+            <div class="cards">
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/buzo-uno.webp" alt="Conjunto de ropa" > 
+                    <h3>Descripción</h3>
+                    <p>Algodón premium y cortes modernos diseñados para el movimiento. La base esencial y duradera para tu outfit urbano diario</p>
+                    </a>
+                </div>
+
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/buzo-dos.webp" alt="Conjunto de invierno" > 
+                    <h3>Descripción</h3>
+                    <p>Camperas técnicas y buzos oversize con frisa pesada. Máximo confort térmico para enfrentar el frío con estética impecable</p> 
+                    </a>
+                </div>
+
+                <div class="card-estruc"> 
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/buzo-tres.webp" alt="Remera overside"> 
+                    <h3>Descripción</h3>
+                    <p>Desde joggers relajados hasta cortes cargo resistentes. Diseños duraderos con el ajuste perfecto para tu ritmo de vida.</p> 
+                    </a>
+                </div>
             </div>
-            <li><h2>Crocs</h2></li>
-            <div>
-                <img src="assets/croc-uno.webp" alt="" height="450">
-                <img src="assets/croc-dos.webp" alt="" height="450">
-                <img src="assets/corc-tres.webp" alt="" height="450">    
+        </div>
+
+        <div class="camperas-cont">
+            <h2>Camperas</h2>
+            <div class="cards">
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/campera-uno.webp" alt="Conjunto de ropa" > 
+                    <h3>Descripción</h3>
+                    <p>Algodón premium y cortes modernos diseñados para el movimiento. La base esencial y duradera para tu outfit urbano diario</p>
+                    </a>
+                </div>
+
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/campera-dos.webp" alt="Conjunto de invierno" > 
+                    <h3>Descripción</h3>
+                    <p>Camperas técnicas y buzos oversize con frisa pesada. Máximo confort térmico para enfrentar el frío con estética impecable</p> 
+                    </a>
+                </div>
+
+                <div class="card-estruc"> 
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/campera-tres.webp" alt="Remera overside"> 
+                    <h3>Descripción</h3>
+                    <p>Desde joggers relajados hasta cortes cargo resistentes. Diseños duraderos con el ajuste perfecto para tu ritmo de vida.</p> 
+                    </a>
+                </div>
             </div>
-        </ul>
+        </div>
+
+        <div class="pantalones-cont">
+            <h2>Pantalones</h2>
+            <div class="cards">
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/pant-uno.webp" alt="Conjunto de ropa" > 
+                    <h3>Descripción</h3>
+                    <p>Algodón premium y cortes modernos diseñados para el movimiento. La base esencial y duradera para tu outfit urbano diario</p>
+                    </a>
+                </div>
+
+                <div class="card-estruc">
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/pant.webp" alt="Conjunto de invierno" > 
+                    <h3>Descripción</h3>
+                    <p>Camperas técnicas y buzos oversize con frisa pesada. Máximo confort térmico para enfrentar el frío con estética impecable</p> 
+                    </a>
+                </div>
+
+                <div class="card-estruc"> 
+                    <a class="vinculos-style" href="Indumentaria.html">
+                    <img src="assets/Indumentaria/pant-tres.webp" alt="Remera overside"> 
+                    <h3>Descripción</h3>
+                    <p>Desde joggers relajados hasta cortes cargo resistentes. Diseños duraderos con el ajuste perfecto para tu ritmo de vida.</p> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
-    <footer>
-        <a href="">Terminos y Condiciones </a>
+    <footer class="footer">
+        <div class="cont-footer"> 
+            <div> 
+                <h4 class="h4-style">Vértigo</h4> 
+                <p class="p-footer">Moda urbana con identidad propia.</p> 
+            </div> 
+            <div> 
+                <h4 class="h4-style">Navegación</h4>
+                <p class="p-footer"><a href="index.html">Home</a></p> 
+            </div> 
+            <div> 
+                <h4 class="h4-style">Contacto</h4>
+                <p class="p-footer">Bialet Massé, Córdoba</p> 
+            </div> 
+        </div> 
+        <div class="logo-contenedor">
+        <img  class="logo-footer"src="assets/identidad/img-marca.svg" alt="">
+        </div>   
     </footer>
+    </div>
 </body>
 </html>
