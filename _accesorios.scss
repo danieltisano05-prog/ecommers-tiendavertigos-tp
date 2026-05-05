@@ -1,0 +1,57 @@
+.main-accesorios
+{   
+    grid-area: main;
+    background-color:$color-bg-dos;
+
+    display: grid;
+        grid-template-areas: 
+        "image"
+        "title"
+        "remera"
+        "buzo"
+        "campera"
+        "pantalones";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto auto auto;
+        width: 100%;
+        gap: 30px;
+        
+        .image-principal
+        {
+            grid-area:image;
+            width: 100%;
+            height: auto;
+        }
+        .title-principal
+        {
+            grid-area:title;
+
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:center;
+
+            font-family: sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: $color-h1;
+            padding: 20px;
+            text-align: center;
+        }
+        .remeras-cont
+        {
+            grid-area:remera;
+        }
+        .buzos-cont
+        {
+            grid-area:buzo;
+        }
+        .camperas-cont
+        {
+            grid-area:campera;
+        }
+        .pantalones
+        {
+            grid-area:pantalones;
+        }
+}
