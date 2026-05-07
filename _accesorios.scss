@@ -1,7 +1,8 @@
+@use 'colores';
 .main-accesorios
 {   
     grid-area: main;
-    background-color:$color-bg-dos;
+    background-color:colores.$color-bg-dos;
 
     display: grid;
         grid-template-areas: 
@@ -34,7 +35,7 @@
             font-family: sans-serif;
             font-size: 3rem;
             font-weight: bold;
-            color: $color-h1;
+            color: colores.$color-h1;
             padding: 20px;
             text-align: center;
         }

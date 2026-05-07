@@ -1,6 +1,7 @@
+@use 'colores';
 .header
     {
-        background-color: $color-nav-uno;
+        background-color: colores.$color-nav-uno;
         grid-area: header;
         
         display: flex;
@@ -22,16 +23,16 @@
             flex-direction: row;
             justify-content:flex-end;
             padding: 30px 50px 20px 20px;
-            color: $color-bg-dos;
+            color: colores.$color-bg-dos;
             width:100%;
-            background-color: $color-nav;
+            background-color: colores.$color-nav;
             gap:2rem;
             .form //Contiene los input para el nombre del usuario y el pass 
             {
                 display: flex;
                 gap: 20px;
                 align-items: center;
-                border-color: $color-bg-dos;
+                border-color: colores.$color-bg-dos;
                 border-style:  solid ;
                 border-radius: 10px;
                 padding: 5px 20px 5px 20px ;
@@ -46,7 +47,7 @@
             {
                 text-decoration: none;
                 color:inherit;
-                border-color: $color-bg-dos;
+                border-color: colores.$color-bg-dos;
                 border-style:  solid ;
                 border-radius: 10px;
                 padding: 5px 20px 5px 20px ;
