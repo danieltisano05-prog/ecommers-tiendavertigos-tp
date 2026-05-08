@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo perfil</title>
+    <title>crear perfil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,58 +20,58 @@
             </form>
         </nav>
         </header>
-    <main clase="main-crearperfil">
+    <main class="main-crearperfil">
         <div class="cards">
-            <div class="card-estruc"> 
-            <form action="" method="post">
-            <fieldset class="fieldset-style">
-                <legend><h2>Crear nuevo perfil</h2></legend>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre"  name="nomb" required>     
-                </div>
-                <div>
-                    <label for="apellido">Apellido</label> 
-                    <input type="text" id="apellido" name="apell" required>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="em" required>
-                </div>
-                <div>
-                    <label for="Ciudad">Cuidad</label>
-                    <select id="Ciudad" name="Prov" required>
-                        <option value="" disabled selected>Seleccione una opcion</option>
-                        <option value="Cordoba">Córdoba</option>
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Santa Fe">Santa Fe</option>
-                        <option value="Rio Negro">Rio Negro</option>
-                        <option value="Chubut">Chubut</option>
-                        <option value="Tierra del fuego">Tierra del fuego</option>
-                        <option value="Mendoza">Mendoza</option>
-                        <option value="Neuquen">Neuquen</option>
-                        <option value="Chaco">Chaco</option>
-                    <option value="Formosa">Formosa</option>
-                    </select>  
-                </div>
-                <div>
-                    <label for="Fecha_Nacimiento">Fecha de nacimiento</label>
-                    <input type="date" id="Fecha_Nacimiento" name="datenac" required>
-                </div>
-                <div>
-                    <label for="contraseña">Crear contraseña</label>
-                    <input type="password" name="pas" id="contraseña" placeholder="***************" required>
-                </div>
-                <div>
-                    <label for="contraseñad">Repetir contraseña</label>
-                    <input type="password" name="pas" id="contraseñad" placeholder="***************" required>
-                </div>
-            </fieldset>
-                <label for="checkbox">Subcripcion a nuestras ofertar</label>   
-                <input type="checkbox" name="chek" id="checkbox">
-                <button type="submit">Crear nuevo perfil</button>
-                </div>
-            </form>
+            <div class="card-estruc card-estruc--perfil"> 
+                <form action="" method="post">
+                    <fieldset class="fieldset-style">
+                    <legend><h2>Crear nuevo perfil</h2></legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre"  name="nomb" required>     
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label> 
+                            <input type="text" id="apellido" name="apell" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="em" required>
+                        </div>
+                        <div>
+                            <label for="Ciudad">Cuidad</label>
+                        <select id="Ciudad" name="Prov" required>
+                            <option value="" disabled selected>Seleccione una opcion</option>
+                            <option value="Cordoba">Córdoba</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Rio Negro">Rio Negro</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Tierra del fuego">Tierra del fuego</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Neuquen">Neuquen</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Formosa">Formosa</option>
+                        </select>  
+                        </div>
+                        <div>
+                            <label for="Fecha_Nacimiento">Fecha de nacimiento</label>
+                            <input type="date" id="Fecha_Nacimiento" name="datenac" required>
+                        </div>
+                        <div>
+                            <label for="contraseña">Crear contraseña</label>
+                            <input type="password" name="pas" id="contraseña" placeholder="***************" required>
+                        </div>
+                        <div>
+                            <label for="contraseñad">Repetir contraseña</label>
+                            <input type="password" name="pas" id="contraseñad" placeholder="***************" required>
+                        </div>
+                    </fieldset>
+                    <label for="checkbox">Subcripcion a nuestras ofertar</label>   
+                    <input type="checkbox" name="chek" id="checkbox">
+                    <button type="submit">Crear nuevo perfil</button> 
+                </form>
+            </div>    
         </div>
     </main>
     <footer class="footer">
