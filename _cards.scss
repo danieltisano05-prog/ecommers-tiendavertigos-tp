@@ -18,6 +18,24 @@
     background-color: colores.$color-bgtres;
     border-radius: 12px;
     box-shadow: 9px 7px 30px 0px rgba(0,0,0,0.6);
+
+    &--perfil 
+    {
+
+        background-color: colores.$color-back-perfil;
+        padding: 20px;
+    .fieldset-style
+    {
+        
+        border-color: black;
+        padding: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 3px;
+        border-style: solid;
+    }
+
+    }
     h3
     {
         text-align: center;
