@@ -6,8 +6,6 @@
         
         display: flex;
         flex-direction:column;
-        // justify-content:center;
-        // flex-wrap: wrap;
         align-items: center;
         width: 100%;
         .logo
@@ -27,30 +25,20 @@
             width:100%;
             background-color: colores.$color-nav;
             gap:2rem;
-            .form //Contiene los input para el nombre del usuario y el pass 
-            {
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                border-color: colores.$color-bg-dos;
-                border-style:  solid ;
-                border-radius: 10px;
-                padding: 5px 20px 5px 20px ;
-                .button
-                {
-                    padding: 5px 30px 5px 30px;
-                    // margin-bottom: 8px;
-                    border-radius: 5px;
-                }
-            }
+
             .style-vinculo
             {
-                text-decoration: none;
-                color:inherit;
-                border-color: colores.$color-bg-dos;
-                border-style:  solid ;
-                border-radius: 10px;
-                padding: 5px 20px 5px 20px ;
+                &--log
+                {
+
+                    text-decoration: none;
+                    color:inherit;
+                    border-color: colores.$color-bg-dos;
+                    border-style:  solid ;
+                    border-radius: 10px;
+                    padding: 5px 20px 5px 20px ;
+                    margin: 10px;
+                }
             }
         }
     }
