@@ -19,26 +19,46 @@
         { 
             display: flex;
             flex-direction: row;
-            justify-content:flex-end;
+            justify-content:space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            
             padding: 30px 50px 20px 20px;
-            color: colores.$color-bg-dos;
             width:100%;
             background-color: colores.$color-nav;
             gap:2rem;
 
+            .cate-nav
+            {
+                margin-right: auto;
+                display: flex;
+                gap: 1.5rem;
+                &--a
+                {
+                    
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+
             .style-vinculo
             {
+                display: flex;
                 &--log
                 {
-
                     text-decoration: none;
-                    color:inherit;
+                    color:white;
                     border-color: colores.$color-bg-dos;
                     border-style:  solid ;
                     border-radius: 10px;
                     padding: 5px 20px 5px 20px ;
                     margin: 10px;
                 }
+            }
+            &:hover 
+            {
+            background-color: colores.$colorcateg;
+            
             }
         }
     }
