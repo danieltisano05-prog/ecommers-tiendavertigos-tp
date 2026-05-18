@@ -96,6 +96,7 @@
         justify-content: center;
         margin-top: 30px;
 
+        
         .boton
         {
             width: 100%;
@@ -109,6 +110,21 @@
             border-radius: 6px;
             cursor: pointer;
             // transition: background-color 0.3s ease, transform 0.1s ease;
+            
+            &--iniciar
+            {
+            width: 100%;
+            padding: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: red; // Tu color de botón
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            // transition: background-color 0.3s ease, transform 0.1s ease;
+            }
 
             &:hover {
                 background-color: darkneen(red, 7%); // Se oscurece un poco al pasar el mouse
