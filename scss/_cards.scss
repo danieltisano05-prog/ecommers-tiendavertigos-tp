@@ -2,12 +2,43 @@
 .cards
 {   
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(29rem,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
     gap: 3rem;
     grid-auto-flow:column wrap;
-    margin: 3rem;
+    margin:1rem;
     justify-content: center;
     justify-items: center;
+}
+
+.card-formulario
+{
+    
+    max-width: 60rem;
+    width: 100%;
+    padding: 40px;
+    background-color: colores.$color-bgtres;
+    border-radius: 12px;
+    box-shadow: 9px 7px 30px 0px rgba(0,0,0,0.6);
+    .title
+    {
+        display: flex;
+        font-size: 30px;
+        justify-content: center;
+        padding-bottom: 20px;
+        // background-color: red;
+    }
+    .rows
+    {
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+        .font
+        {
+            font-size: 20px;
+        }
+    }
+
+    
 }
 
 .card-estruc
@@ -19,23 +50,6 @@
     border-radius: 12px;
     box-shadow: 9px 7px 30px 0px rgba(0,0,0,0.6);
 
-    &--perfil 
-    {
-
-        background-color: colores.$color-back-perfil;
-        padding: 20px;
-    .fieldset-style
-    {
-        
-        border-color: black;
-        padding: 25px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border: 3px;
-        border-style: solid;
-    }
-
-    }
     h3
     {
         text-align: center;
@@ -53,6 +67,6 @@
         font-size:25px;
         text-align: justify;
         padding: 5px 15px 5px 15px;
-
+        
     }
 }
