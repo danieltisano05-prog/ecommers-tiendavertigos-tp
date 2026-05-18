@@ -33,3 +33,12 @@ body
     text-decoration: none;
     color: inherit;
 }
+.main-crear-inicar 
+{
+    min-height: auto; /*  Se estira si el formulario es largo */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colores.$color-bg; 
+}

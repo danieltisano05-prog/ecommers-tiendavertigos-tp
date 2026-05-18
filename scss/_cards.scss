@@ -9,36 +9,116 @@
     justify-content: center;
     justify-items: center;
 }
-
-.card-formulario
+.cards-sesion
 {
-    
-    max-width: 60rem;
+    display: flex;
+    justify-content: center; // Centra horizontalmente
+    align-items: center;     // Centra verticalmente
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.card-formulario 
+{
+    max-width: 60rem; // Un poco más angosto suele verse mejor en formularios de escritorio
     width: 100%;
     padding: 40px;
     background-color: colores.$color-bgtres;
     border-radius: 12px;
-    box-shadow: 9px 7px 30px 0px rgba(0,0,0,0.6);
-    .title
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); // Sombra un poco más suave y moderna
+    margin: 20px auto; // Lo centra en pantalla si está solo
+
+    .title 
     {
         display: flex;
-        font-size: 30px;
+        font-size: 32px;
         justify-content: center;
-        padding-bottom: 20px;
-        // background-color: red;
+        padding-bottom: 5px;
+        font-weight: 600;
     }
-    .rows
+
+    .rows 
     {
         display: flex;
-        padding: 5px;
-        justify-content: space-between;
-        .font
+        flex-direction: column; // En móviles se apila verticalmente por defecto
+        gap: 8px;
+        padding: 12px 0;
+
+        .font 
         {
-            font-size: 20px;
+            font-size: 16px; // 20px suele ser muy grande para etiquetas de formularios comunes
+            font-weight: 500;
+        }
+
+        // Estilos para los campos de entrada
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select 
+        {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 16px;
+            border: 1px solid rgba(250, 250, 250, 0.2); // Cambia según tus colores de borde
+            border-radius: 6px;
+            background-color: rgba(250, 250, 250, 0.05); // Fondo sutil para el input
+            color: inherit;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
     }
 
-    
+    // Comportamiento único para la fila del checkbox
+    .rows-checkbox {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .font {
+            width: auto;
+            cursor: pointer;
+        }
+    }
+
+    // Contenedor y estilos del botón de envío
+    .rows-boton {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .boton
+        {
+            width: 100%;
+            padding: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: red; // Tu color de botón
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            // transition: background-color 0.3s ease, transform 0.1s ease;
+
+            &:hover {
+                background-color: darkneen(red, 7%); // Se oscurece un poco al pasar el mouse
+            }
+
+            &:active {
+                transform: scale(0.98); // Efecto de click hundido
+            }
+        }
+    }
 }
 
 .card-estruc
